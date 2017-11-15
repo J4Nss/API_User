@@ -134,6 +134,6 @@ app.post('/sotus', function(req, res) {
 	res.send('POST Request: Hello World..');
 });
 
-app.listen(port, hostname, function() {
+app.listen(port, function() {
 	console.log('Simple API started at http://localhost:' + port);
 });
