@@ -1,0 +1,21 @@
+<% include header %>
+<h2>Add New Customer:</h2>
+<form method="POST" action="/user">
+	<label>Full Name</label><br>
+	<input type="text" name="name">
+	<br>
+	<label>Age</label><br>
+	<input type="number" name="age">
+	<br>
+	<label>Email</label><br>
+	<input type="text" name="email">
+	<br><br>
+	<input type="submit" value="Add">
+</form>
+<h3><%= title %></h3>
+<ul>
+	<% users.forEach( (user) => { %>
+		<li>[<%= user.id %>] <%= user.name%> ( <%= user.age %> ) - <%= user.email %></li>
+	<% }); %>
+</ul>	
+<% include footer %>

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>View Edit</title>
+</head>
+<body>
+	<h2>Edit Customer ID: <%= user.id %></h2>
+	<form method="PUT" action="/user/<%= user.id %>">
+		<label>Full Name</label><br>
+		<input type="text" name="name" value="<%= user.name %>">
+		<br>
+		<label>Age</label><br>
+		<input type="number" name="age" value="<%= user.age %>">
+		<br>
+		<label>Email</label><br>
+		<input type="text" name="email" value="<%= user.email %>">
+		<br><br>
+		<input type="submit" value="Submit Editing">
+	</form>
+</body>
+</html>
